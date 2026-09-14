@@ -1,0 +1,6 @@
+{
+  "name": "AURA Creative Agency Template",
+  "description": "High-performance creative agency platform built with Svelte 5, Tailwind CSS v4, GSAP 3, Lenis smooth scrolling, and seamless multi-page routes for About, Work, Services, Agency, and Contact.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

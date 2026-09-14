@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<script>
+			(function() {
+				try {
+					let currentFetch = window.fetch;
+					Object.defineProperty(window, 'fetch', {
+						get() { return currentFetch; },
+						set(fn) { currentFetch = fn; },
+						configurable: true,
+						enumerable: true
+					});
+				} catch (e) {}
+			})();
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="text-scale" content="scale" />
+		<title>Soil — Creative Agency</title>
+		<meta name="description" content="Soil — High-performance creative agency landing page built with Svelte 5, Tailwind CSS v4, GSAP 3, and Lenis smooth scrolling." />
+		<meta property="og:title" content="Soil — Creative Agency" />
+		<meta property="og:description" content="Soil — High-performance creative agency landing page built with Svelte 5, Tailwind CSS v4, GSAP 3, and Lenis smooth scrolling." />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>

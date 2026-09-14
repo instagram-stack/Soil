@@ -1,0 +1,30 @@
+{
+  "name": "aura-creative-agency",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev --port=3000 --host=0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --port=3000 --host=0.0.0.0",
+    "prepare": "svelte-kit sync || echo ''",
+    "lint": "vite build"
+  },
+  "dependencies": {
+    "@lucide/svelte": "^1.3.0",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.23"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^7.0.1",
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.57.0",
+    "@sveltejs/vite-plugin-svelte": "^7.0.0",
+    "@tailwindcss/forms": "^0.5.11",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.2.2",
+    "svelte": "^5.55.2",
+    "tailwindcss": "^4.2.2",
+    "vite": "^8.0.7"
+  }
+}
